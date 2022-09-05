@@ -12,7 +12,7 @@ const Logout = (data) => {
     }
   }, []);
   if (!authenticated) {
-    if (data.exp * 1000 < Date.now()) {
+    {
       <Login />;
     }
     return <Navigate replace to="/logout" />;
